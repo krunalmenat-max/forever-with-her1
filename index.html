@@ -1,104 +1,50 @@
-export default function AnniversaryLovePage() {
-  const nextPage = () => {
-    document.getElementById('shayari').style.display = 'none';
-    document.getElementById('proposal').style.display = 'block';
-  };
+export default function AnniversaryLovePage() {   const nextPage = () => {     document.getElementById('shayari').style.display = 'none';     document.getElementById('proposal').style.display = 'block';   }; const moveNoButton = (e) => { const btn = e.target; btn.style.position = 'absolute';     btn.style.left = Math.random() * 75 + '%';     btn.style.top = Math.random() * 75 + '%'; };   const forever = () => {     document.getElementById('proposal').style.display = 'none';     document.getElementById('celebration').style.display = 'flex'; }; return (    
+     
+       
+         
+❤️ Happy 2nd Anniversary ❤️
+         
+            Do saal pehle humne sirf ek rishta shuru nahi kiya tha, humne ek ghar banana shuru kiya tha.
 
+            Pehle din se hum saath rahe, saath hanse, saath lade,aur har mushkil ko ek team bankar paar kiya.
 
-  const moveNoButton = (e) => {
-    const btn = e.target;
-    btn.style.position = 'absolute';
-    btn.style.left = Math.random() * 75 + '%';
-    btn.style.top = Math.random() * 75 + '%';
-  };
+            Har anniversary par hum ek naye ghar mein aaye,jaise zindagi humein har saal ek naya chapter gift karti rahi.
 
-  const forever = () => {
-    document.getElementById('proposal').style.display = 'none';
-    document.getElementById('celebration').style.display = 'flex';
-  };
+            Shayad agle saal bhi hum move karein...Lekin is baar meri dua itni si hai, ki woh ghar kiraye ka na ho,balki humara apna ho. 🏡
 
-  return (
-    <div className='min-h-screen bg-gradient-to-br from-rose-100 via-pink-50 to-red-100 overflow-hidden'>
-      <div id='shayari' className='min-h-screen flex items-center justify-center p-6'>
-        <div className='max-w-4xl bg-white/90 backdrop-blur rounded-3xl shadow-2xl p-10 text-center'>
-          <h1 className='text-5xl font-bold text-rose-600 mb-8'>❤️ Happy 2nd Anniversary ❤️</h1>
-          <p className='text-xl leading-10 text-gray-700'>
-            Do saal pehle humne sirf ek rishta shuru nahi kiya tha,<br/>
-            humne ek ghar banana shuru kiya tha.<br/><br/>
+            Jab us ghar ki chaabi humare haath mein ho, main sirf ek cheez dekhna chahta hoon...Tumhara haath mere haath mein. ❤️
 
+            Tum meri aadat ho, mera sukoon ho, meri har future planning ka sabse khoobsurat hissa ho.          
 
-            Pehle din se hum saath rahe,
-            saath hanse, saath lade,
-            aur har mushkil ko ek team bankar paar kiya.<br/><br/>
-            Har anniversary par hum ek naye ghar mein aaye,
-            jaise zindagi humein har saal ek naya chapter gift karti rahi.<br/><br/>
-            Shayad agle saal bhi hum move karein...
-            Lekin is baar meri dua itni si hai,
-            ki woh ghar kiraye ka na ho,
-            balki humara apna ho. 🏡<br/><br/>
-            Jab us ghar ki chaabi humare haath mein ho,
-            main sirf ek cheez dekhna chahta hoon...
-            Tumhara haath mere haath mein. ❤️<br/><br/>
-            Tum meri aadat ho,
-            mera sukoon ho,
-            meri har future planning ka sabse khoobsurat hissa ho.
-          </p>
-          <button
-            onClick={nextPage}
-            className='mt-10 bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg'>
-            Next ❤️
-          </button>
-        </div>
-      </div>
-      <div id='proposal' style={{display:'none'}} className='min-h-screen flex items-center justify-center p-6'>
-        <div className='bg-white rounded-3xl shadow-2xl p-10 text-center relative max-w-3xl'>
-          <h2 className='text-5xl font-bold text-red-500 mb-6'>Will You Be My Forever? ❤️</h2>
-          <p className='text-2xl text-gray-700 mb-10 leading-10'>
-            Aaj hum ek ghar share karte hain...<br/>
-            Kal main tumhare saath ek zindagi share karna chahta hoon. ❤️<br/><br/>
-            Not just the next home.
-            Not just the next year.
-            But every address, every dream and every tomorrow.
-          </p>
+                      Next ❤️                  
+     
+     
+       
+         
+Will You Be My Forever? ❤️
+         
+            Aaj hum ek ghar share karte hain...
+            Kal main tumhare saath ek zindagi share karna chahta hoon. ❤️
 
-          <div className='flex justify-center gap-6'>
-            <button
-              onClick={forever}
-              className='bg-rose-500 hover:bg-rose-600 text-white px-10 py-4 rounded-full text-2xl font-bold'>
-              FOREVER ❤️
-            </button>
-            <button
-              onMouseEnter={moveNoButton}
-              className='bg-gray-400 text-white px-10 py-4 rounded-full text-2xl font-bold'>
-              NOT AN OPTION 😅
-            </button>
-          </div>
-        </div>
-      </div>
-      <div id='celebration' style={{display:'none'}} className='min-h-screen flex-col items-center justify-center text-center relative overflow-hidden'>
-        <div className='absolute inset-0 text-5xl opacity-30 animate-pulse overflow-hidden'>
-          ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️
-          <br/><br/>
-          LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE
-          <br/><br/>
-          ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️
-          <br/><br/>
-          LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE
-        </div>
+            Not just the next home. Not just the next year. But every address, every dream and every tomorrow.
 
-        <h1 className='text-7xl font-extrabold text-rose-600 z-10'>❤️ FOREVER ❤️</h1>
+         
+                          FOREVER ❤️                                       NOT AN OPTION 😅                      
+       
+     
+     
+       
+          ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️          
 
+          LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE          
 
-        <p className='text-3xl mt-8 text-gray-700 z-10'>
-          Welcome To Our Forever Story ❤️
-        </p>
+          ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️          
 
+          LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE LOVE
+       
+❤️ FOREVER ❤️
+       
+          Welcome To Our Forever Story ❤️
 
-        <p className='text-xl mt-6 max-w-2xl text-gray-600 z-10'>
-          From our first home... to our next home... and one day to our own home.
-          No matter where life takes us, my favorite place will always be next to you.
-        </p>
-      </div>
-    </div>
-  );
-}
+       
+          From our first home... to our next home... and one day to our own home.           No matter where life takes us, my
