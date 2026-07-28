@@ -1,0 +1,94 @@
+export default function AnniversaryLovePage() {
+  const moveNoButton = (e) => {
+    const btn = e.target;
+    btn.style.position = 'absolute';
+    btn.style.left = Math.random() * 80 + '%';
+    btn.style.top = Math.random() * 80 + '%';
+  };
+
+  const sayYes = () => {
+    alert('❤️ Forever starts today ❤️');
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-rose-100 to-red-200 flex items-center justify-center p-6">
+      <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-3xl text-center relative">
+        <h1 className="text-4xl font-bold text-rose-600 mb-4">
+          ❤️ Happy 2nd Anniversary My Love ❤️
+        </h1>
+
+        <p className="text-lg text-gray-700 mb-6">
+          Two years. One home every anniversary. One journey. One forever.
+        </p>
+
+        <div className="bg-pink-50 rounded-2xl p-6 text-left mb-6">
+          <h2 className="text-2xl font-semibold text-rose-500 mb-3">For You 🌹</h2>
+
+
+          <p className="leading-8 text-gray-700">
+            Do saal pehle humne sirf ek rishta shuru nahi kiya tha,<br/>
+            humne ek ghar banana shuru kiya tha.<br/><br/>
+            Pehle din se hum saath rahe,
+            saath hanse, saath lade,
+            aur har mushkil ko ek hi team ki tarah face kiya.<br/><br/>
+            Ajeeb si baat hai na...
+            Har anniversary par hum ek naye ghar mein move hue,
+            jaise zindagi har saal humare liye ek naya chapter likhti gayi.<br/><br/>
+
+
+            Shayad agle saal bhi hum move karein,
+            lekin is baar meri dua sirf itni hai...
+            ki woh ghar kiraye ka na ho,
+            woh humara apna ho.<br/><br/>
+
+
+            Aur us ghar ki har deewar par,
+            har sapne mein,
+            har subah aur har raat mein,
+            sirf tum ho.<br/><br/>
+
+
+            Tum sirf meri girlfriend nahi ho,
+            tum meri aadat ho,
+            meri sukoon ho,
+            meri har future plan ka sabse khoobsurat hissa ho.<br/><br/>
+
+
+            Isliye aaj, is special din par,
+            main tumse ek sawaal poochna chahta hoon...
+          </p>
+        </div>
+
+        <h2 className="text-3xl font-bold text-red-500 mb-4">
+          Will You Be My Forever? ❤️
+        </h2>
+
+        <p className="text-lg text-gray-700 italic mb-8">
+          Aaj hum ek ghar share karte hain...<br/>
+          Kal main tumhare saath ek zindagi share karna chahta hoon. ❤️
+        </p>
+
+
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={sayYes}
+            className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-3 rounded-full text-xl font-bold shadow-lg"
+          >
+            FOREVER ❤️
+          </button>
+
+          <button
+            onMouseEnter={moveNoButton}
+            className="bg-gray-400 text-white px-8 py-3 rounded-full text-xl font-bold"
+          >
+            NOT AN OPTION 😅
+          </button>
+        </div>
+
+        <p className="mt-10 text-sm text-gray-500">
+          Made for the love of my life ❤️
+        </p>
+      </div>
+    </div>
+  );
+}
